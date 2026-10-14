@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%236d4aed%27/%3E%3Cpath d=%27M16 6l2 6 6 2-6 2-2 6-2-6-6-2 6-2z%27 fill=%27white%27/%3E%3C/svg%3E" />
+  <title>BrandCraft AI</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="#home">
+      <div class="brand-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+      </div>
+      <span>BrandCraft AI</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#features" data-nav="features">Features</a>
+      <a href="#dashboard" data-nav="dashboard">Dashboard</a>
+      <a href="#chatbot" data-nav="chatbot">Chatbot</a>
+    </div>
+    <div class="user-menu">
+      <button class="user-btn" id="userBtn" type="button">
+        <div class="avatar" id="userAvatar">U</div>
+        <span class="user-name" id="userName">User</span>
+      </button>
+      <div class="dropdown hidden" id="userDropdown">
+        <div class="email" id="userEmail"></div>
+        <button type="button" id="logoutBtn">Sign out</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="view"></main>
+  <div class="toast" id="toast"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
